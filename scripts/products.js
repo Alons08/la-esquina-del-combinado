@@ -348,6 +348,23 @@ const products = [
 // Hacer el array accesible globalmente
 window.restaurantProducts = products;
 
+// Lógica para disponibilidad especial según el día
+function updateSpecialAvailability() {
+    const today = new Date().getDay(); // 0=domingo, 1=lunes, ..., 6=sábado
+    // Ceviche de Conchas Negras solo jueves (4)
+    const conchasNegras = products.find(p => p.name.includes('Conchas Negras'));
+    if (conchasNegras) {
+        conchasNegras.available = (today === 4);
+    }
+    // Cabrito solo sábado (6) y domingo (0)
+    const cabrito = products.find(p => p.name.toLowerCase().includes('cabrito'));
+    if (cabrito) {
+        cabrito.available = (today === 6 || today === 0);
+    }
+}
+
+updateSpecialAvailability();
+
 function renderProducts(category = 'combinados') {
     const menuItemsContainer = document.getElementById('menu-items');
     if (!menuItemsContainer) return;
@@ -455,6 +472,7 @@ function setupProductEvents() {
 }
 
 function initProducts() {
+    updateSpecialAvailability();
     renderProducts('combinados');
     setupFilters();
     setupProductEvents();
