@@ -219,7 +219,7 @@ const products = [
         category: "bebidas",
         price: 8.00,
         description: "Refrescante jarra de chicha morada, perfecta para compartir en familia o con amigos.",
-        image: "./images/menu/jarra-chicha-morada.jpg",
+        image: "./images/menu/jarra-chicha.jpg",
         available: true
     },
     {
