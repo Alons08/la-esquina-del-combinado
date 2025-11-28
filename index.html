@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <title>La Esquina Del Combinado</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWERTNSBP6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PWERTNSBP6');
+    </script>
+</head>
+<body>
+    <!-- Navbar importado -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">LA ESQUINA DEL COMBINADO</h1>
+            <p class="hero-subtitle">Un lugar para compartir y disfrutar cada noche</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Ver nuestra carta</a>
+                <a href="#contact" class="btn btn-outline">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Nuestra Historia</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>La Esquina del Combinado abrió sus puertas en 2024, inspirada en la calidez de la zona y el gusto por compartir. Desde entonces, brindamos momentos únicos y sabores frescos, para que cada noche sea especial y llena de buenos recuerdos para todos nuestros visitantes.</p>
+                </div>
+                <div class="about-image">
+                    <img src="./images/restaurant-exterior.jpg" alt="Exterior del restaurante" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Nuestra Carta</h2>
+            <p class="section-subtitle">Deliciosos platos preparados con ingredientes frescos</p>
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-category="combinados">Combinados</button>
+                <button class="filter-btn" data-category="ceviches">Ceviches</button>
+                <button class="filter-btn" data-category="duos-marinos">Duos Marinos</button>
+                <button class="filter-btn" data-category="porciones">Porciones</button>
+                <button class="filter-btn" data-category="platos-a-la-carta">Platos a la Carta</button>
+                <button class="filter-btn" data-category="bebidas">Bebidas</button>
+            </div>
+            
+            <div class="menu-items" id="menu-items">
+                <!-- Los productos se cargarán dinámicamente desde JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Av. 12 Noviembre 1309 - Florencia De Mora</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p><a href="tel:+51920035270">920 035 270</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <p>
+                            <a href="https://wa.me/51920035270?text=Hola%2C%20quiero%20más%20información..." target="_blank">Enviar mensaje por WhatsApp</a>
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Lunes a Viernes (menos Miércoles): 7:00 PM - 12:00 AM</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Sabado y Domingo: 09:00 AM - 3:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.5493821828859!2d-79.01977838179201!3d-8.081327298807768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d105ee65145%3A0x32ec4c1f96661ab!2sLa%20esquina%20del%20combinado!5e0!3m2!1ses-419!2spe!4v1764369414299!5m2!1ses-419!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer importado -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Floating Cart Button -->
+    <button type="button" class="cart-float" id="cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cart-count">0</span>
+    </button>
+
+    <!-- Cart Modal -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-container" id="cart-modal">
+        <!-- Paso 1: Vista del Carrito -->
+        <div class="cart-step" id="cart-step-1">
+            <div class="cart-header">
+                <h3>Tu Pedido</h3>
+                <button class="close-cart" id="close-cart">&times;</button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Los items del carrito se agregarán aquí dinámicamente -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total">S/0.00</span>
+                </div>
+                <button class="btn btn-primary" id="checkout">Realizar Pedido</button>
+            </div>
+        </div>
+
+        <!-- Paso 2: Formulario de Información -->
+        <div class="cart-step" id="cart-step-2">
+            <div class="cart-header">
+                <button class="back-to-cart" id="back-to-cart">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <h3>Información del Pedido</h3>
+                <button class="close-cart" id="close-cart-2">&times;</button>
+            </div>
+            <!-- Dentro del cart-step-2, modifica el formulario así: -->
+            <div class="customer-info">
+                <form id="order-form">
+                    <div class="form-group">
+                        <label for="customer-name">Nombre *</label>
+                        <input type="text" id="customer-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer-phone">Teléfono *</label>
+                        <input type="tel" id="customer-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery-payment">Tipo de Pago *</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="delivery-payment" value="Efectivo" required> Efectivo</label>
+                            <label><input type="radio" name="delivery-payment" value="Yape"> Yape</label>
+                            <label><input type="radio" name="delivery-payment" value="Plin"> Plin</label>
+                            <label><input type="radio" name="delivery-payment" value="Otro"> Tarjeta</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery-type">Tipo de Entrega *</label>
+                        <select id="delivery-type" required>
+                            <option value="">Seleccionar</option>
+                            <option value="pickup">Recoger en el Local</option>
+                            <option value="delivery">Delivery</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Campos para Recoger en Local -->
+                    <div class="delivery-fields" id="pickup-fields">
+                        <div class="form-group">
+                            <label for="pickup-time">Tiempo estimado para recoger *</label>
+                            <select id="pickup-time" required>
+                                <option value="">Seleccionar</option>
+                                <option value="20-25">20 - 25 minutos</option>
+                                <option value="25-30">25 - 30 minutos</option>
+                                <option value="30-plus">30 minutos a más</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickup-notes">Observaciones</label>
+                            <textarea id="pickup-notes" rows="2"></textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- Campos para Delivery -->
+                    <div class="delivery-fields" id="delivery-fields">
+                        <div class="form-group">
+                            <label for="delivery-address">Dirección de Entrega *</label>
+                            <input type="text" id="delivery-address">
+                        </div>
+                        <div class="form-group">
+                            <label for="delivery-notes">Observaciones</label>
+                            <textarea id="delivery-notes" rows="2"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form-actions">
+                <button class="btn btn-outline" id="cancel-order">Cancelar</button>
+                <button class="btn btn-primary" id="submit-order">Enviar Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/products.js"></script>
+    <script src="./scripts/cart.js"></script>
+    <script src="./scripts/main.js"></script>
+
+    <!-- Modal Oferta Mensual Mejorado -->
+    <div id="offer-modal" class="offer-modal-overlay">
+        <div class="offer-modal-content">
+            <button class="offer-modal-close" id="close-offer-modal">&times;</button>
+            <img src="./images/menu/jarra-chicha.jpg" alt="Oferta del mes" class="offer-img" />
+            <h2 class="offer-title">¡Oferta del Mes!</h2>
+            <p class="offer-description">Al primer pedido una <b>jarra de chicha gratis</b>.</p>
+        </div>
+    </div>
+    <style>
+        .offer-modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(33, 122, 138, 0.15);
+            backdrop-filter: blur(2px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            animation: fadeIn 0.5s;
+        }
+        .offer-modal-content {
+            background: linear-gradient(135deg, #fff 80%, #e3f6f8 100%);
+            padding: 36px 28px 28px 28px;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(33,122,138,0.18);
+            text-align: center;
+            max-width: 370px;
+            position: relative;
+            border: 2px solid #217a8a22;
+            animation: fadeInUp 0.7s;
+        }
+        .offer-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            box-shadow: 0 4px 16px rgba(33,122,138,0.12);
+            margin-bottom: 18px;
+            border: 3px solid #217a8a33;
+            background: #e3f6f8;
+            border-radius: 12px;
+        }
+        .offer-title {
+            color: #217a8a;
+            font-size: 2.1rem;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .offer-description {
+            font-size: 1.15rem;
+            color: #14505c;
+            margin-bottom: 8px;
+        }
+        .offer-modal-close {
+            position: absolute;
+            top: 10px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 2.2rem;
+            color: #217a8a;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .offer-modal-close:hover {
+            color: #e74c3c;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var offerModal = document.getElementById('offer-modal');
+            var closeBtn = document.getElementById('close-offer-modal');
+            offerModal.style.display = 'flex';
+            closeBtn.onclick = function() {
+                offerModal.style.display = 'none';
+            };
+        });
+    </script>
+</body>
+</html>
