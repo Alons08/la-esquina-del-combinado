@@ -211,14 +211,14 @@ const products = [
         description: "Cabrito disponible solo sábado y domingo.",
         image: "./images/menu/cabrito.jpg",
         available: true
-    },
+    },   
     // Bebidas
     {
         id: 101,
         name: "Jarra de Chicha Morada",
         category: "bebidas",
         price: 8.00,
-        description: "Refrescante jarra de chicha morada, perfecta para compartir en familia o con amigos.",
+        description: "Jarra de chicha morada, perfecta para compartir.",
         image: "./images/menu/jarra-chicha.jpg",
         available: true
     },
@@ -227,7 +227,7 @@ const products = [
         name: "1/2 Jarra de Chicha Morada",
         category: "bebidas",
         price: 5.00,
-        description: "Media jarra de chicha morada, ideal para acompañar tu plato favorito.",
+        description: "Media jarra de chicha morada.",
         image: "./images/menu/media-jarra-chicha-morada.jpg",
         available: true
     },
@@ -237,7 +237,7 @@ const products = [
         name: "Gaseosa Personal Coca Cola",
         category: "bebidas",
         price: 3.00,
-        description: "Botella personal de Coca Cola, ideal para refrescarte solo.",
+        description: "Botella personal de Coca Cola.",
         image: "./images/menu/gaseosa-personal-coca.jpg",
         available: true
     },
@@ -246,7 +246,7 @@ const products = [
         name: "Gaseosa Personal Inca Kola",
         category: "bebidas",
         price: 3.00,
-        description: "Botella personal de Inca Kola, ideal para refrescarte solo.",
+        description: "Botella personal de Inca Kola.",
         image: "./images/menu/gaseosa-personal-inca.jpg",
         available: true
     },
@@ -256,7 +256,7 @@ const products = [
         name: "Gaseosa de 500ml Coca Cola",
         category: "bebidas",
         price: 4.00,
-        description: "Coca Cola en presentación de 500ml, para compartir o disfrutar más.",
+        description: "Botella de 500ml Coca Cola.",
         image: "./images/menu/gaseosa-coca-500ml.jpg",
         available: true
     },
@@ -265,7 +265,7 @@ const products = [
         name: "Gaseosa de 500ml Inca Kola",
         category: "bebidas",
         price: 4.00,
-        description: "Inca Kola en botella de 500ml, para compartir o disfrutar más.",
+        description: "Botella de 500ml Inca Kola.",
         image: "./images/menu/gaseosa-inca-500ml.jpg",
         available: true
     },
@@ -275,7 +275,7 @@ const products = [
         name: "Gaseosa de 1L Coca Cola",
         category: "bebidas",
         price: 6.00,
-        description: "Coca Cola en botella de 1 litro, ideal para compartir en la mesa.",
+        description: "Botella de 1 litro Coca Cola.",
         image: "./images/menu/gaseosa-coca-1l.jpg",
         available: true
     },
@@ -284,7 +284,7 @@ const products = [
         name: "Gaseosa de 1L Inca Kola",
         category: "bebidas",
         price: 6.00,
-        description: "Inca Kola en presentación de 1 litro, ideal para compartir en la mesa.",
+        description: "Botella de 1 litro Inca Kola.",
         image: "./images/menu/gaseosa-inca-1l.jpg",
         available: true
     },
@@ -294,7 +294,7 @@ const products = [
         name: "Gaseosa de 2L Coca Cola",
         category: "bebidas",
         price: 10.00,
-        description: "Coca Cola en botella de 2 litros, perfecta para reuniones y familias.",
+        description: "Botella de 2 litros Coca Cola.",
         image: "./images/menu/gaseosa-2l-coca.jpg",
         available: true
     },
@@ -303,7 +303,7 @@ const products = [
         name: "Gaseosa de 2L Inca Kola",
         category: "bebidas",
         price: 10.00,
-        description: "Inca Kola en botella de 2 litros, para compartir el sabor nacional.",
+        description: "Botella de 2 litros Inca Kola.",
         image: "./images/menu/gaseosa-2l-inca.jpg",
         available: true
     },
@@ -312,7 +312,7 @@ const products = [
         name: "Agua",
         category: "bebidas",
         price: 3.00,
-        description: "Agua embotellada, pura y fresca para hidratarte en cualquier momento.",
+        description: "Agua embotellada de 500ml.",
         image: "./images/menu/agua.jpg",
         available: true
     },
@@ -321,7 +321,7 @@ const products = [
         name: "Pilsen Trujillo",
         category: "bebidas",
         price: 8.00,
-        description: "Cerveza Pilsen Trujillo, sabor tradicional para acompañar tus mejores momentos.",
+        description: "Cerveza Pilsen Trujillo.",
         image: "./images/menu/cerveza-pilsen-trujillo.jpg",
         available: true
     },
@@ -330,7 +330,7 @@ const products = [
         name: "Pilsen Callao",
         category: "bebidas",
         price: 9.00,
-        description: "Cerveza Pilsen Callao, refrescante y perfecta para compartir entre amigos.",
+        description: "Cerveza Pilsen Callao.",
         image: "./images/menu/cerveza-pilsen-callao.jpg",
         available: true
     },
@@ -339,7 +339,7 @@ const products = [
         name: "Cusqueña Trigo/Negra",
         category: "bebidas",
         price: 10.00,
-        description: "Cerveza Cusqueña de Trigo y Negra, calidad premium para paladares exigentes.",
+        description: "Cerveza Cusqueña de Trigo o Negra.",
         image: "./images/menu/cerveza-cusqueña.jpg",
         available: true
     }
