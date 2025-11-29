@@ -638,6 +638,49 @@ body {
     display: none;
 }
 
+/* Carrusel de comentarios */
+.testimonials {
+    background: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+.testimonial-carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 120px;
+    padding: 0 20px;
+}
+.testimonial-item {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.6s;
+    position: absolute;
+    left: 0; right: 0;
+    background: #e3f6f8;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(33,122,138,0.10);
+    padding: 32px 24px 24px 24px;
+    margin: 0 auto;
+    max-width: 520px;
+    border: 2px solid #b2e4ea;
+}
+.testimonial-item.active {
+    display: block;
+    opacity: 1;
+    position: relative;
+}
+@media (max-width: 900px) {
+    .testimonial-carousel {
+        max-width: 95vw;
+        padding: 0 8px;
+    }
+    .testimonial-item {
+        max-width: 95vw;
+        padding: 18px 8px 16px 8px;
+    }
+}
+
 /* Carrito */
 .cart-overlay {
     position: fixed;
