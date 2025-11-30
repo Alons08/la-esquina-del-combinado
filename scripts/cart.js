@@ -105,11 +105,17 @@ function setupDeliveryToggle() {
             cartElements.pickupFields.classList.remove('active');
             cartElements.deliveryFields.classList.remove('active');
 
-            // Mostrar los campos correspondientes
+            // Mostrar los campos correspondientes y hacer scroll
             if (deliveryType === 'pickup') {
                 cartElements.pickupFields.classList.add('active');
+                setTimeout(() => {
+                    cartElements.pickupFields.scrollIntoView({ behavior: 'smooth', block: 'end' });
+                }, 100);
             } else if (deliveryType === 'delivery') {
                 cartElements.deliveryFields.classList.add('active');
+                setTimeout(() => {
+                    cartElements.deliveryFields.scrollIntoView({ behavior: 'smooth', block: 'end' });
+                }, 100);
             }
         });
     }
