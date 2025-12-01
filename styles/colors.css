@@ -14,16 +14,16 @@
     --primary-900: #880b15;
     
     /* Secondary Colors - Fresh & Natural */
-    --secondary-50: #e0f2f1;
-    --secondary-100: #b2dfdb;
-    --secondary-200: #80cbc4;
-    --secondary-300: #4db6ac;
-    --secondary-400: #26a69a;
-    --secondary-500: #2a9d8f;
-    --secondary-600: #21867a;
-    --secondary-700: #1b6f65;
-    --secondary-800: #155850;
-    --secondary-900: #10413b;
+    --secondary-50: #f0fbff;
+    --secondary-100: #d2f3ff;
+    --secondary-200: #aeefff;
+    --secondary-300: #7be3ff;
+    --secondary-400: #4fd6ff;
+    --secondary-500: #22caff;
+    --secondary-600: #1bb8e6;
+    --secondary-700: #159fc7;
+    --secondary-800: #117fa3;
+    --secondary-900: #0c5c73;
     
     /* Accent Colors - Warm & Inviting */
     --accent-50: #fff3e0;
@@ -50,16 +50,16 @@
     --neutral-900: #121417;
     
     /* Semantic Colors */
-    --success-50: #e8f5e8;
-    --success-100: #c8e6c9;
-    --success-200: #a5d6a7;
-    --success-300: #81c784;
-    --success-400: #66bb6a;
-    --success-500: #2a9d8f;
-    --success-600: #21867a;
-    --success-700: #1b6f65;
-    --success-800: #155850;
-    --success-900: #10413b;
+    --success-50: #f0fbff;
+    --success-100: #d2f3ff;
+    --success-200: #aeefff;
+    --success-300: #7be3ff;
+    --success-400: #4fd6ff;
+    --success-500: #22caff;
+    --success-600: #1bb8e6;
+    --success-700: #159fc7;
+    --success-800: #117fa3;
+    --success-900: #0c5c73;
     
     --warning-50: #fff8e1;
     --warning-100: #ffecb3;
@@ -114,7 +114,7 @@
     --gradient-primary: linear-gradient(135deg, var(--primary-500), var(--accent-600));
     --gradient-secondary: linear-gradient(135deg, var(--secondary-500), var(--secondary-700));
     --gradient-accent: linear-gradient(135deg, var(--accent-500), var(--accent-700));
-    --gradient-hero: linear-gradient(135deg, rgba(38, 70, 83, 0.9) 0%, rgba(42, 157, 143, 0.8) 100%);
+    --gradient-hero: linear-gradient(135deg, var(--secondary-900) 0%, var(--secondary-400) 100%);
     --gradient-dark: linear-gradient(135deg, var(--neutral-800) 0%, var(--neutral-900) 100%);
     --gradient-light: linear-gradient(135deg, var(--neutral-50) 0%, var(--neutral-100) 100%);
     
