@@ -1323,6 +1323,30 @@ body {
     transform: scale(1.1);
 }
 
+/* Eliminar highlight táctil en móviles */
+.btn, .cart-float, .menu-toggle, .close-cart, 
+.back-to-cart, .add-to-cart, .quantity-btn,
+.filter-btn, .nav-links a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Específico para botones en móviles */
+@media (max-width: 768px) {
+    .btn, .cart-float, .add-to-cart, .filter-btn {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+    }
+    
+    /* Prevenir el azul de selección en iOS */
+    .btn:active, .cart-float:active, .add-to-cart:active {
+        background-color: inherit;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .offer-modal-content {
