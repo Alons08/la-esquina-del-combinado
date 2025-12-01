@@ -541,7 +541,7 @@ body {
 
 /* Testimonials Section */
 .testimonials {
-    background: linear-gradient(135deg, var(--light-bg) 0%, var(--white) 100%);
+    background: var(--light-bg);
     padding: 100px 0;
 }
 

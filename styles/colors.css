@@ -140,7 +140,7 @@
     --white: #ffffff;
     --black: var(--neutral-900);
     
-    --light-bg: var(--neutral-50);
+    --light-bg:#ffeb89;
     --light-gray: var(--neutral-200);
     --medium-gray: var(--neutral-400);
     
