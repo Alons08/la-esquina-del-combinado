@@ -1515,6 +1515,9 @@ body {
 }
 
 @media (max-width: 480px) {
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
     /* Reducir espacio vertical en tarjetas de comida en móvil */
     .item-info {
         padding: 14px 10px;
