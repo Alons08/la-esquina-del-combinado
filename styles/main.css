@@ -1325,10 +1325,15 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .navbar {
-        padding: 12px 0;
+    .offer-modal-content {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: auto;
+        max-width: calc(100vw - 32px);
+        padding: 30px 16px 20px;
     }
-    
     .nav-links {
         position: fixed;
         top: 70px;
