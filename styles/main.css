@@ -1347,16 +1347,16 @@ body {
     
     .nav-links.active {
         left: 0;
-        /* Reducir espacio vertical entre secciones en móvil */
+        /* Espacio vertical entre secciones en móvil ajustado */
         .about,
         .menu,
         .testimonials,
         .contact {
-            padding: 50px 0;
+            padding: 60px 0;
         }
 
         .section-header {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
     }
     
@@ -1480,16 +1480,16 @@ body {
     .hero-title {
         font-size: 2.2rem;
     }
-        /* Más reducción de espacio en pantallas muy pequeñas */
+        /* Espacio vertical entre secciones en celular ajustado */
         .about,
         .menu,
         .testimonials,
         .contact {
-            padding: 50px 0;
+            padding: 60px 0;
         }
 
         .section-header {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
     .btn {
         width: auto;
