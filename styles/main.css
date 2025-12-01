@@ -377,7 +377,7 @@ body {
     background: var(--white);
     border-radius: var(--border-radius-lg);
     overflow: hidden;
-    box-shadow: var(--shadow);
+    box-shadow: 0 6px 32px rgba(38, 70, 83, 0.18), 0 1.5px 6px rgba(0,0,0,0.10);
     transition: var(--transition);
     display: flex;
     flex-direction: column;
@@ -1477,6 +1477,25 @@ body {
 }
 
 @media (max-width: 480px) {
+    /* Reducir espacio vertical en tarjetas de comida en móvil */
+    .item-info {
+        padding: 14px 10px;
+    }
+    .item-info h3 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    .description {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+    .price {
+        font-size: 1.15rem;
+        margin-bottom: 10px;
+    }
+    .item-actions {
+        margin-top: 4px;
+    }
     .hero-title {
         font-size: 2.2rem;
     }
