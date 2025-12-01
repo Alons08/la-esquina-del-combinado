@@ -246,7 +246,7 @@ body {
 /* About Section */
 .about {
     padding: 100px 0;
-    background: var(--light-bg);
+    background: linear-gradient(135deg, #f8f9fa 0%, #d2eafd 100%);
 }
 
 .about-content {
@@ -550,7 +550,7 @@ body {
 
 /* Testimonials Section */
 .testimonials {
-    background: var(--light-bg);
+    background: linear-gradient(135deg, #f8f9fa 0%, #d2eafd 100%);
     padding: 100px 0;
 }
 
