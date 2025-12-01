@@ -194,9 +194,9 @@ body {
 }
 
 .btn-outline:hover {
-    background: var(--primary-dark);
+    background: var(--neutral-500);
     color: var(--white);
-    border-color: var(--primary-dark);
+    border-color: var(--neutral-500);
     transform: translateY(-3px);
 }
 
