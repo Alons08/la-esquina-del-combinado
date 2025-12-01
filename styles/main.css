@@ -1500,6 +1500,26 @@ body {
         font-size: 0.85rem;
     }
 
+    /* Ajuste para tarjetas de contacto en móvil */
+    .contact-card, .feature {
+        padding: 10px 10px !important;
+        gap: 7px !important;
+        margin-bottom: 12px !important;
+    }
+    .contact-card i, .feature i {
+        font-size: 1rem !important;
+    }
+    .contact-card h3, .feature-title {
+        font-size: 1rem !important;
+        margin-bottom: 4px !important;
+    }
+    .contact-card p, .feature-description {
+        font-size: 0.9rem !important;
+        margin-bottom: 2px !important;
+    }
+    .contact-card {
+        min-height: unset !important;
+    }
     .restaurant-name {
         font-size: 1.3rem;
     }
