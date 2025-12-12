@@ -34,7 +34,7 @@ const products = [
         category: "ceviches",
         price: 25.00,
         description: "Ceviche especial de cangrejos.",
-        image: "./images/menu/ceviche-cangrejos.jpg",
+        image: "./images/menu/ceviche-cangrejo.jpg",
         available: true
     },
     {
@@ -98,7 +98,7 @@ const products = [
         category: "combinados",
         price: 14.00,
         description: "Patita en fiambre tradicional.",
-        image: "./images/menu/patita-fiambre.jpg",
+        image: "./images/menu/combinado-fiambre.jpg",
         available: true
     },
     // Duos Marinos
@@ -228,7 +228,7 @@ const products = [
         category: "bebidas",
         price: 5.00,
         description: "Media jarra de chicha morada.",
-        image: "./images/menu/media-jarra-chicha-morada.jpg",
+        image: "./images/menu/jarra-chicha.jpg",
         available: true
     },
             // Gaseosas Personal
@@ -238,7 +238,7 @@ const products = [
         category: "bebidas",
         price: 3.00,
         description: "Botella personal de Coca Cola.",
-        image: "./images/menu/gaseosa-personal-coca.jpg",
+        image: "./images/menu/gaseosa-coca-personal.jpg",
         available: true
     },
     {
@@ -247,7 +247,7 @@ const products = [
         category: "bebidas",
         price: 3.00,
         description: "Botella personal de Inca Kola.",
-        image: "./images/menu/gaseosa-personal-inca.jpg",
+        image: "./images/menu/gaseosa-inca-personal.jpg",
         available: true
     },
             // Gaseosas 500ml
@@ -295,7 +295,7 @@ const products = [
         category: "bebidas",
         price: 10.00,
         description: "Botella de 2 litros Coca Cola.",
-        image: "./images/menu/gaseosa-2l-coca.jpg",
+        image: "./images/menu/gaseosa-coca-2l.jpg",
         available: true
     },
     {
@@ -304,7 +304,7 @@ const products = [
         category: "bebidas",
         price: 10.00,
         description: "Botella de 2 litros Inca Kola.",
-        image: "./images/menu/gaseosa-2l-inca.jpg",
+        image: "./images/menu/gaseosa-inca-2l.jpg",
         available: true
     },
     {
@@ -322,7 +322,7 @@ const products = [
         category: "bebidas",
         price: 8.00,
         description: "Cerveza Pilsen Trujillo.",
-        image: "./images/menu/cerveza-pilsen-trujillo.jpg",
+        image: "./images/menu/cerveza-trujillo.jpg",
         available: true
     },
     {
@@ -336,11 +336,20 @@ const products = [
     },
     {
         id: 114,
-        name: "Cusqueña Trigo/Negra",
+        name: "Cusqueña Negra",
         category: "bebidas",
         price: 10.00,
         description: "Cerveza Cusqueña de Trigo o Negra.",
         image: "./images/menu/cerveza-cusqueña.jpg",
+        available: true
+    },
+    {
+        id: 114,
+        name: "Cusqueña Trigo",
+        category: "bebidas",
+        price: 10.00,
+        description: "Cerveza Cusqueña de Trigo o Negra.",
+        image: "./images/menu/cerveza-negra.jpg",
         available: true
     }
 ];
