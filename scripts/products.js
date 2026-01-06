@@ -83,7 +83,7 @@ const products = [
         image: "./images/menu/combinado-patita.jpg",
         available: true
     },
-    {
+    /* {
         id: 13,
         name: "Patita con Ceviche",
         category: "combinados",
@@ -91,8 +91,8 @@ const products = [
         description: "Patita servida con ceviche fresco.",
         image: "./images/menu/patita-ceviche.jpg",
         available: true
-    },
-    {
+    }, */
+    /* {
         id: 14,
         name: "Patita en Fiambre",
         category: "combinados",
@@ -100,7 +100,7 @@ const products = [
         description: "Patita en fiambre tradicional.",
         image: "./images/menu/combinado-fiambre.jpg",
         available: true
-    },
+    }, */
     // Duos Marinos
     {
         id: 20,
