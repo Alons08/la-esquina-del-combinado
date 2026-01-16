@@ -126,7 +126,7 @@ const products = [
         category: "duos-marinos",
         price: 30.00,
         description: "Ceviche mixto acompañado de chicharrón de pescado.",
-        image: "./images/menu/duo-ceviche-chicharron.jpg",
+        image: "./images/menu/duo-marino-mixto.jpg",
         available: true
     },
     // Porciones
