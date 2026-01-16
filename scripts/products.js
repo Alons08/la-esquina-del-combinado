@@ -28,6 +28,7 @@ const products = [
         image: "./images/menu/ceviche-mixto.jpg",
         available: true
     },
+    /*
     {
         id: 4,
         name: "Ceviche de Cangrejos",
@@ -37,6 +38,7 @@ const products = [
         image: "./images/menu/ceviche-cangrejo.jpg",
         available: true
     },
+    */
     {
         id: 5,
         name: "Leche de Tigre",
@@ -203,6 +205,7 @@ const products = [
         image: "./images/menu/broaster.jpg",
         available: true
     },
+    /*
     {
         id: 44,
         name: "Cabrito",
@@ -211,7 +214,8 @@ const products = [
         description: "Cabrito disponible solo sábado y domingo.",
         image: "./images/menu/cabrito.jpg",
         available: true
-    },   
+    }, 
+    */  
     // Bebidas
     {
         id: 101,
