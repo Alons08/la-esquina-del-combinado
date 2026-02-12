@@ -1178,6 +1178,11 @@ body {
     background-color: var(--white);
 }
 
+.form-actions .btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
 /* Floating Cart Button (MANTENIDO) */
 .cart-float {
     position: fixed;
